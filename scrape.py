@@ -69,7 +69,7 @@ headers = {
 request = Request(url, headers=headers)
 
 data = {
-        'message':f'観測地点[西脇]直近の平均気温{average_temp}',
+        'message':f'観測地点[西脇]直近の平均気温{average_temp:.2f}',
 }
 
 data = urlencode(data).encode("utf-8")
